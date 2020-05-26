@@ -1,28 +1,42 @@
 
-.header__logo{
-//   max-width: 100%;
-//   height: auto;
-// max-height: 100vh;
-// width: auto;
-height: 105vh;
-width: auto;
-position: relative;
-// background-image: linear-gradient(to right bottom, 
-// rgba(blue, 0.8),
-// rgba(red, 0.8)),
-// url('../img/header-img.jpg');
-background-image: 
-//radial-gradient(circle, rgba(131,148,240,0.9023984593837535) 14%, rgba(32,133,218,0.9136029411764706) 54%, rgba(26,105,198,1) 95%),
-radial-gradient(circle, rgba(131,148,240,0.8099614845938375) 14%, rgba(32,133,218,0.9136029411764706) 54%, rgba(26,105,198,0.8855917366946778) 95%),
-url('../img/header-img.jpg');
- background-size: cover;
- clip-path: polygon(50% 0%, 100% 0, 100% 78%, 50% 100%, 50% 100%, 0 83%, 0 0);
-// overflow:hidden;
-& p{
-    font-size: 8rem;
-    letter-spacing: 1rem;
-    color: #eee;
-}
+.header{
+  
+    &__logo{
+        display: flex;
+        flex-direction: column;
+
+        height: 105vh;
+        width: auto;
+        position: relative;
+        
+       // justify-content: center;
+       align-items: center;
+        background-image: 
+        radial-gradient(circle, rgba(131,148,240,0.8099614845938375) 14%, rgba(32,133,218,0.9136029411764706) 54%, rgba(26,105,198,0.8855917366946778) 95%),
+        url('../img/header-img.jpg');
+         background-size: cover;
+         
+        @supports(clip-path: polygon(50% 0%, 100% 0, 100% 78%, 50% 100%, 50% 100%, 0 83%, 0 0)){
+             clip-path: polygon(50% 0%, 100% 0, 100% 78%, 50% 100%, 50% 100%, 0 83%, 0 0);
+        }
+    }
+
+    &__text{
+        font-size: 22rem;
+        letter-spacing: 1rem;
+        color: #fff;
+        margin-top: 30rem;
+
+        font-weight: 1000;
+        text-shadow:  -3px -3px 20px rgba(221,221,221,0.66);
+    }
+    &__desc{
+        font-size: 5rem;
+        color: #eee;
+        margin-top: -5rem;
+        letter-spacing: 1.3rem;
+        font-weight: 200;
+    }
 }
 
 // .header__logo-container{
@@ -39,4 +53,5 @@ radial-gradient(circle, rgba(131,148,240,0.8099614845938375) 14%, rgba(32,133,21
 
  //   clip-path: polygon(0 50%, 50% 100%, 50% 100%, 100% 50%, 100% 100%, 100% 50%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 50% 100%, 0 100%);
  clip-path: polygon(50% 100%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%);
+ -webkit-clip-path: polygon(50% 100%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%);
 }
