@@ -44,43 +44,77 @@ body {
   letter-spacing: 1.1rem;
   font-weight: 400; }
 
-.el {
-  width: 100%;
-  height: 50rem;
-  background: radial-gradient(circle, rgba(131, 148, 240, 0.809961) 14%, rgba(32, 133, 218, 0.913603) 54%, rgba(26, 105, 198, 0.885592) 95%);
-  clip-path: polygon(50% 100%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%);
-  -webkit-clip-path: polygon(50% 100%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%); }
-
 .cta {
   width: auto;
-  padding-top: 40vh;
+  padding-top: 20vh;
   margin-top: -30vh;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .cta__content {
+    flex-basis: 40%;
     display: flex;
     flex-direction: column;
     width: 50vw;
-    padding: 5rem;
-    height: 110vh; }
-  .cta__photo-container {
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    margin-left: 5rem; }
+  .cta__photo-subsection {
     width: 50vw;
     height: 110vh;
     display: flex;
     justify-content: center;
-    align-items: stretch; }
+    align-items: center; }
   .cta__heading {
     font-size: 4rem;
-    color: #000; }
+    color: #000;
+    margin-bottom: 2rem; }
   .cta__text {
-    font-size: 1.5rem; }
-  .cta__image {
-    height: 10rem;
-    display: block; }
-    .cta__image > img {
-      width: 20rem; }
+    font-size: 1.5rem;
+    padding: 0 3rem; }
+  .cta__btn {
+    margin: 2rem;
+    text-decoration: none;
+    border: 2px solid #2085da;
+    padding: 1rem 3rem;
+    border-radius: 20%; }
+  .cta__photo-container {
+    position: absolute; }
+    .cta__photo-container::before {
+      content: '';
+      height: .5rem;
+      width: 40rem;
+      position: relative;
+      top: -1rem;
+      left: 15rem;
+      background-color: #2085da;
+      display: block; }
+    .cta__photo-container::after {
+      height: .5rem;
+      width: 40rem;
+      position: relative;
+      content: "";
+      background-color: #2085da;
+      display: block;
+      top: 1rem;
+      left: -5rem; }
+  .cta__photo {
+    width: 50rem;
+    height: auto;
+    display: block;
+    z-index: 2; }
+  .cta::after {
+    content: '';
+    align-self: center;
+    flex-basis: 100%;
+    width: 100%;
+    height: 40rem;
+    margin-top: -20rem;
+    background: radial-gradient(circle, rgba(131, 148, 240, 0.809961) 14%, rgba(32, 133, 218, 0.913603) 54%, rgba(26, 105, 198, 0.885592) 95%);
+    clip-path: polygon(50% 100%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%);
+    -webkit-clip-path: polygon(50% 100%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%); }
 
 @font-face {
   font-family: 'jost';
