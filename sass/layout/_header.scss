@@ -22,20 +22,20 @@
     }
 
     &__text{
-        font-size: 22rem;
-        letter-spacing: 1rem;
+        font-size: 14.75rem;
+        letter-spacing: 0.8rem;
         color: #fff;
-        margin-top: 30rem;
+        margin-top: 30vh;
 
         font-weight: 1000;
         text-shadow:  -3px -3px 20px rgba(221,221,221,0.66);
     }
     &__desc{
-        font-size: 5rem;
+        font-size: 3.5rem;
         color: #eee;
-        margin-top: -5rem;
-        letter-spacing: 1.3rem;
-        font-weight: 200;
+        margin-top: -3rem;
+        letter-spacing: 1.1rem;
+        font-weight: 400;
     }
 }
 

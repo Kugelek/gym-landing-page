@@ -1,6 +1,53 @@
 
-.section-calltoaction{
-    height: 50rem;
-    margin-top: -25vh;
-    height: 120vh;
+.cta{
+    
+    width: auto;
+    padding-top: 40vh;
+    margin-top: -30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        padding: 5rem;
+        height: 110vh;
+    }
+    &__photo-container{
+        width: 50vw;
+        height: 110vh;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+     
+        
+       
+    }
+
+    &__heading{
+        font-size: 4rem;
+        color: #000;
+    }
+    &__text{
+        font-size: 1.5rem;
+
+    }
+    &__btn{
+
+    }
+    &__image{
+       height: 10rem;
+     
+      // object-fit: cover;
+       display: block;
+
+       &>img{
+           width:20rem;
+       }
+    }
+   
+    
 }
