@@ -1,0 +1,34 @@
+.features{
+    height: 100vh;
+    background-color: #eee;
+    padding-top: 10rem;
+    display: grid;
+  margin: auto auto;
+  grid-column-gap: 3rem;
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+    
+
+    &__box{
+       
+        background-image: 
+        radial-gradient(circle, rgba(131,148,240,0.8099614845938375) 14%, rgba(32,133,218,0.9136029411764706) 54%, rgba(26,105,198,0.8855917366946778) 95%);
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    &__icon{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    &__description{
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        color: #fff;
+
+    }
+}
